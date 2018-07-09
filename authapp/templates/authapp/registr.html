@@ -1,0 +1,24 @@
+{% extends 'authapp/base.html' %}
+{% load staticfiles %}
+{% block title %}
+    {{ block.super }}
+{% endblock %}
+
+
+{% block main %}
+    <h1>Регистрация</h1>
+
+    <div class="maintop">
+        <div class="maintoptext">
+        <form class="form-horizontal" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <br>
+            <input class="form-control" type="submit" value="зарегистрироваться">
+        </form>
+        </div>
+    </div>
+    <br>
+
+
+{% endblock %}

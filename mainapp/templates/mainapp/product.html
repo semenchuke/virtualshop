@@ -1,0 +1,29 @@
+{% extends 'mainapp/base_product.html' %}
+{% load staticfiles %}
+
+
+{% block title %}
+    {{ product.name }}
+{% endblock %}
+
+
+{% block main %}
+<h1>{{ product.name }}</h1>
+
+<div class="maintop">
+    <div class="maintoptext">
+
+        <img src="/media/{{ product.image }}" class="pic" alt="{{ product.short_desc }}"><br><br>
+            {{ product.description }}<br><br>
+
+
+        <div class="ByeButton">
+            <button type="button" class="btn btn-success">
+                <a href="{% url 'basket:add' product.pk %}">Купить за {{ product.price }} руб.</a>
+            </button>
+        </div>
+
+
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,242 @@
+*{
+	padding: 0px;
+	margin:0px;
+}
+
+header {
+	background: rgb(178, 181, 184);
+	box-shadow: 0 0 15px rgb(76, 5, 94);
+	font-family: 'Jura', sans-serif;
+	padding: 20px;
+	/*position: fixed;
+	top: 0;*/
+	width: 100%;
+}
+
+
+header nav ul{
+	text-align: center;
+	list-style: none;
+	font-size: 20px;
+}
+
+header nav ul li{
+	display: inline-block;
+	margin: 0 20px;
+	/*background: blue;
+	height: 50px;
+	width: 250px;
+	line-height: 50px;*/
+}
+
+header nav ul li a{
+	text-decoration: none !important;
+	color: white;
+}
+
+header nav ul li a:hover {
+color: #FF0066;
+}
+
+main{
+/*	background: url(images/back4.jpg);
+	background-attachment: fixed;*/
+	font-family: 'Exo 2', sans-serif;
+	margin: 0 auto;
+	width: 100%
+}
+
+main h1{
+	margin: 20px 0;
+	text-align: center;
+}
+
+main .maintop{
+	width: 100%;
+	margin: 0 auto;
+	text-align: left;
+}
+
+main .maintoptext{
+	padding: 20px;
+	margin: 0 auto;
+	/*background: rgba(194, 196, 196, 0.95);*/
+	background: rgba(255, 255, 255, 0.95);
+	width: 69%;
+
+}
+
+main .maintoptext ul{
+	list-style: none;
+}
+
+main .maindown{
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+main .maindownleft{
+	/*width: 46%;*/
+	width: 40%;
+	/*float: left;*/
+	text-align: left;
+	background: rgba(255, 255, 255, 0.8);
+	margin: 10px;
+	padding: 10px;
+	display: inline-block;
+}
+
+
+
+main .maindownright{
+	/*width: 46%;*/
+	width: 40%;
+	/*float: right;*/
+	text-align: left;
+	background: rgba(255, 255, 255, 0.8);
+	margin: 10px;
+	padding:10px;
+	display: inline-block;
+}
+
+main .maindownleft .OculusRift{
+	padding: 5px;
+	margin: 5px;
+	background: #9966FF;
+}
+
+.OculusRift a{
+	text-decoration: none;
+	color: black;
+}
+
+.OculusRift a:hover{
+	color: white;
+}
+
+.HTCVIVE a{
+	text-decoration: none;
+	color: black;
+}
+
+.HTCVIVE a:hover{
+	color: white;
+}
+
+.PSVR a{
+	text-decoration: none;
+	color: black;
+}
+
+.PSVR a:hover{
+	color: white;
+}
+
+.HOLOLENS a{
+	text-decoration: none;
+	color: black;
+}
+
+.HOLOLENS a:hover{
+	color: white;
+}
+
+
+main .maindownleft .HTCVIVE{
+	padding: 5px;
+	margin: 5px;
+	background: #9966FF;
+}
+
+main .maindownright .PSVR{
+	padding: 5px;
+	margin: 5px;
+	background: #9966FF;
+}
+
+main .maindownright .HOLOLENS{
+	padding: 5px;
+	margin: 5px;
+	background: #9966FF;
+}
+
+.buttonMore{
+	height: 38px;
+	width: 120px;
+	font-size: 18px;
+	border-radius: 10px;
+	font-family: 'Exo 2', sans-serif;
+	background: rgba(191, 159, 214, 1);
+	margin-left: 85%;
+}
+
+.buttonMore a{
+	text-decoration: none;
+	color: white;
+}
+
+.buttonMore a:hover {
+	color: rgb(252, 8, 44);
+}
+
+.active {
+	font-style: italic;
+	color: #FF0066;
+}
+
+/*.pic{
+	float: right;
+}*/
+
+.ByeButton{
+	margin-bottom: 10px;
+	text-align: right;
+	text-decoration: none;
+}
+
+
+main .maintop .basketleft{
+	display: inline-block;
+	margin: 10px;
+	padding:10px;
+	width: 60%;
+}
+
+main .maintop .basketright{
+	display: inline-block;
+	margin: 10px;
+	padding:10px;
+	width: 30%;
+}
+
+
+
+footer {
+	background: rgb(178, 181, 184);
+	box-shadow: 0 0 15px rgb(76, 5, 94);
+	font-family: 'Jura', sans-serif;
+	margin-top: 20px;
+	padding: 20px;
+	text-align: center;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	font-size: 20px;
+	color: white;
+	flex: 0 0 auto;
+}
+
+
+.maintoptext, .maindownright, .maindownright, .maindownleft, .maindownleft{
+ 	border-radius: 15px;
+ 	border: #9966FF double 6px;
+ }
+
+.HOLOLENS, .PSVR, .HTCVIVE, .OculusRift{
+ 	border-radius: 8px;
+ }
+
+.clearfix {
+	clear: both;
+}

@@ -1,0 +1,52 @@
+<nav>
+    <ul>
+        <li>
+            <a href="{% url 'cat:catalog' %}">| Каталог</a>
+        </li>
+
+        <li>
+            <a href="{% url 'index' %}">Помощь при выборе</a>
+        </li>
+
+        <li>
+            <a href="{% url 'contacts' %}">Связаться с нами</a>
+        </li>
+
+        <li>
+            <a href="{% url 'index' %}">О нас</a>
+        </li>
+
+         <li>
+             {% if user.is_authenticated %}
+                <a href="{% url 'auth:logout' %}">Выйти |</a>
+             {% else %}
+                <a href="{% url 'auth:login' %}">Войти |</a>
+             {% endif %}
+        </li>
+
+        <li>
+             {% if user.is_authenticated %}
+                <a href="{% url 'auth:edit' %}">{{ user.first_name | default:'Пользователь' }}</a>
+             {% endif %}
+        </li>
+
+        <li>
+            <a href="{% url 'admin:main' %}">
+                {% if user.is_superuser %}
+                    admin
+                {% endif %}
+            </a>
+        </li>
+
+        <li>
+            <a href="{% url 'basket:watch_in' %}">
+                {% if basket %}
+                  {{ basket.0.totalcost | floatformat:0}} руб
+                  ({{ basket.0.totalquantity }} шт.)
+                {% endif %}
+            </a>
+        </li>
+
+
+    </ul>
+</nav>

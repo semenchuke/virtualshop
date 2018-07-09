@@ -1,0 +1,26 @@
+{% extends 'mainapp/base.html' %}
+{% load staticfiles %}
+
+
+{% block main %}
+<br>
+<header>{% include 'mainapp/includes/inc_cmenu.html' %}</header>
+
+<h1>Каталог: горячее предложение</h1>
+
+<div class="maintop">
+        <div class="maintoptext">
+
+            {% for product in same_products %}
+                <h2>{{ product.name }}</h2><br>
+                <img src="/media/{{ product.image }}" class="pic" alt="{{ product.short_desc }}"><br><br>
+                {{ product.description }}<br><br>
+                <button class="buttonMore"><a href="{% url 'cat:product' product.pk %}">Подробнее<a></button>
+                <br><br>
+                <hr><br>
+            {% endfor %}
+
+
+        </div>
+</div>
+{% endblock %}

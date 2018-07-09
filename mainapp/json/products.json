@@ -1,0 +1,38 @@
+[
+    {
+        "category": "очки виртуальной реальности",
+        "name": "Oculus rift",
+        "image": " ",
+        "short_desc": "oculus",
+        "description": "родоночальник шлемов вр",
+        "price": "40999",
+        "quantity": "10"
+    },
+    {
+        "category": "очки виртуальной реальности",
+        "name": "HTC Vive",
+        "image": " ",
+        "short_desc": "vive",
+        "description": "премиум шлем с лучшим трекингом и разрешением",
+        "price": "44990",
+        "quantity": "23"
+    },
+    {
+        "category": "очки виртуальной реальности",
+        "name": "Playstation VR",
+        "image": " ",
+        "short_desc": "psvr",
+        "description": "Самый востребованный на рынке шлем",
+        "price": "20000",
+        "quantity": "88"
+    },
+    {
+        "category": "очки дополненной реальности",
+        "name": "Holo Lens",
+        "image": " ",
+        "short_desc": "hololens",
+        "description": "наиболее нестандартное и креативное решение на рынке",
+        "price": "288990",
+        "quantity": "8"
+    }
+]

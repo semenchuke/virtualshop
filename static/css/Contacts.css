@@ -1,0 +1,191 @@
+*{
+	padding: 0px;
+	margin:0px;
+}
+
+header {
+	background: rgb(178, 181, 184);
+	font-family: 'Jura', sans-serif;
+	padding: 20px;
+	/*position: fixed;
+	top: 0;*/
+	width: 100%;
+	box-shadow: 0 0 15px rgb(76, 5, 94);
+}
+
+
+header nav ul{
+	text-align: center;
+	list-style: none;
+	font-size: 20px;
+}
+
+header nav ul li{
+	display: inline-block;
+	margin: 0 20px;
+}
+
+header nav ul li a{
+	text-decoration: none;
+	color: white;
+}
+
+header nav ul li a:hover {
+color: #FF0066;
+}
+
+main{
+						/*background: url(images\back1.jpg);
+						background-attachment: fixed; не понятно 
+						почему не работает, что-то не так с приоритетом???*/
+
+
+	font-family: 'Exo 2', sans-serif;
+}
+
+main h1{
+	margin: 20px 0;
+	text-align: center;
+}
+
+main .maintop{
+	width: 100%;
+	text-align: left;
+	height: 1400px;
+}
+
+main .maintoptext{
+	padding: 20px;
+	margin: 0 auto;
+	background: rgba(255, 255, 255, 0.95);
+	width: 75%;
+	height: 1200px;
+
+}
+
+main .maintoptext .mainTopTextleft{
+	width: 23%;
+	/*height: 90%;*/
+	float: left;
+	text-align: left;
+	background: rgba(209, 167, 206, 0);
+	margin: 10px;
+	padding: 10px;
+}
+
+							/*main .maintoptext .mainTopTextleft a: hover{
+								color: red;
+							} не могу понять почему не работает*/
+
+
+main .maintoptext .mainTopTextright{
+	width: 63%;
+	/*height: 90%;*/
+	float: right;
+	text-align: left;
+	/*background: rgba(209, 167, 206, 0.5);*/
+	background: linear-gradient(to top, rgba(255, 255, 255, 0.5), rgba(147, 34, 240, 0.5));
+	margin: 10px;
+	padding: 10px;
+}
+
+main .maintoptext .mainTopTextleft a{
+	text-decoration: none;
+	color: black;
+}
+
+main .maintoptext .mainTopTextleft a:hover{
+	color: rgb(255, 105, 105);
+}
+
+main .maintoptext .map{
+	clear: both;
+	background: linear-gradient(to top, rgba(255, 255, 255, 0.5), rgba(147, 34, 240, 0.5));
+	padding: 15px;
+	padding-top: 19px;
+	margin: 10px;
+	border-radius: 10px;
+}
+
+main .maintoptext .mainTopTextright:hover{
+	/*background: rgba(209, 167, 206, 0.7);*/
+	background: linear-gradient(to top, rgba(255, 255, 255, 0.5), rgba(147, 34, 240, 0.85));
+}
+
+main .maintoptext .map:hover{
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.5), rgba(147, 34, 240, 0.85)););
+}
+
+input[type="text"]{
+	height: 40px;
+	width: 250px;
+	font-size: 20px;
+	margin-top: 8px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+input[type="text"]:focus{
+	color: blue;
+	background-color: rgb(255, 254, 214);
+									/*text-transform: capitalize;*/
+
+}
+
+textarea[name="mesage"]:focus{
+	color: blue;
+	background-color: rgb(255, 254, 214);
+	display: block;
+
+
+}
+
+textarea[name="mesage"]{
+	width: 400px;
+	height: 200px;
+	margin-top: 8px;
+	border-radius: 5px;
+	font-size: 18px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+
+input[type="submit"]{
+	height: 60px;
+	width: 150px;
+	margin-left: 130px;
+	font-size: 20px;
+	border-radius: 15px;
+	font-family: 'Exo 2', sans-serif;
+	background: pink;
+}
+
+
+footer {
+	background: rgb(178, 181, 184);
+	box-shadow: 0 0 15px rgb(76, 5, 94);
+	font-family: 'Jura', sans-serif;
+	padding: 20px;
+	text-align: center;
+	/*position: fixed;*/
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	font-size: 20px;
+	color: white;
+
+}
+
+.maintoptext{
+ 	border-radius: 15px;
+ 	border: #9966FF double 6px;
+ }
+
+.mainTopTextleft, .mainTopTextright{
+	border-radius: 10px;
+}
+
+
+.clearfix {
+	clear: both;
+}
